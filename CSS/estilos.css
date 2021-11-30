@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Inconsolata', monospace;
+}
+#grilla{
+	display: grid;
+	grid-template-areas: 
+	"head"
+	"contenido"
+	"footer";
+}
+#backgroundConf{
+	height: 100vh;
+	/*background-image: url('../Imagenes/chainsaw-man.jpg');*/
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 100vw;
+}
+#backgroundConfObras{
+	height: 100vh;
+	/*background-image: url('../Imagenes/chainsaw-man.jpg');*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 30% 20%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100vw;
+}
+#backgroundConfObras img{
+	display: flex;
+	margin: 0 2rem;
+}
+.negro{
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.imagen1{
+	background-image: url('../Imagenes/chainsaw-man.jpg');
+}
+.imagen2{
+	background-image: url('../Imagenes/chainsaw-bat.jpg');
+}
+.imagen3{
+	background-image: url('../Imagenes/firepunchF2.jpg');
+	background-position: 20%;
+}
+.imagen4{
+	background-image: url('../Imagenes/lookbackFondo.jpg');
+}
+
+/*HEADER*/
+
+.header{
+	grid-area: head;
+	background-color: #EFFF3D;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.header a{
+	text-decoration: none;
+}
+.logo{
+	padding: 0 50px;	
+	margin: 2% 5% 2% 5%;
+}
+.logo a{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.5rem;
+}
+.navegacion{
+	flex-grow: 1;
+}
+.navegacion ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 1.5rem;
+}
+.selected a{
+	color: #ccc;
+}
+
+/*CONTENT*/
+
+.content{
+	grid-area: contenido;
+	display: flex;
+}
+.contentO{
+	grid-area: contenido;
+	display: flex;
+	flex-direction: column;
+}
+.texto1{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 10vh;
+	padding: 2rem;
+	background-color: rgba(59, 64, 59, 0.5);
+	color: white;
+}
+.texto1 p{
+	padding: 1rem;
+}
+.texto{
+	display: flex;
+	color: white;
+	margin-right: 1rem;
+}
+.titulo{
+	display: inline-flex;
+	font-size: 2rem;
+	background-color: rgba(59, 64, 59, 0.7);
+	color: white;
+}
+
+/*FOOTER*/
+
+.footer{
+	font-family: 'Roboto Condensed', sans-serif;
+	grid-area: footer;
+	background-color: #FF40C9
+}
+.redes{
+	display: inline-block;
+	margin: 2% 10% 2% 10%;
+}
+.footer{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.footer span{
+	font-family: 'Roboto Condensed', sans-serif;
+	display: block;
+	margin-bottom: 5%;
+}
+.footer a{
+	font-family: 'Roboto Condensed', sans-serif;
+	text-decoration: none;
+}
+.redes div{
+	display: inline-block;
+}
+.block{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	flex-grow: 1;
+}
+.contacto{
+	display: flex;
+	align-items: center;
+	background-color: #ccc;
+	border-radius: 7px;
+	margin: 2% 2% 2% 2%;
+}
+.contacto a{
+	font-size: 1.5rem;
+}
+.formulario{
+	height: 60vh;
+}
+.pag div{
+	height: 30vh;
+	display: inline-block;
+	font-family: 'Inconsolata', monospace;
+	font-weight: bold;
+}
+@media all and (max-width: 768px){
+	.logo{
+		padding: 5px;
+	}
+	.logo a{
+		font-size: 1rem;
+	}
+	.navegacion ul{
+		font-size: 0.8rem;
+	}
+	.texto1{
+		font-size: 0.8rem;
+		height: auto;
+		padding: 1px;
+	}
+	.footer .redes{
+		font-size: 0.8rem;
+	}
+	.footer .contacto a{
+		font-size: 0.8rem; 
+	}
+	#backgroundConfObras{
+		height: auto;
+		display: inline-flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		background-position: right;
+	}
+	.texto{
+		font-size: 0.8rem;
+		margin: 10px 8px;
+	}
+	.titulo{
+		font-size: 1.2rem;
+	}
+	#backgroundConfObras img{
+		height: 200px;
+		width: 133px;
+	}
+	.sup div{
+		display: flex;
+		justify-content: center;
+	}
+}
