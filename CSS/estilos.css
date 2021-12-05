@@ -19,7 +19,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
-	width: 100vw;
 }
 #backgroundConfObras{
 	height: 200vh;
@@ -35,9 +34,11 @@
 	width: 100vw;
 }
 #backgroundConfObras div{
+	align-items: center;
+}
+#backgroundConfObras .titulo div{
 	display: inline-flex;
 	justify-content: center;
-	align-items: center;
 }
 #backgroundConfObras img{
 	display: flex;
@@ -128,8 +129,6 @@ nav{
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	height: 10vh;
-	padding: 2rem;
 	background-color: rgba(59, 64, 59, 0.5);
 	color: white;
 }
@@ -139,7 +138,12 @@ nav{
 .texto{
 	display: flex;
 	color: white;
-	margin-right: 1rem;
+	margin: 0 1rem 0 1rem;
+	padding: 0.3rem;
+	border-radius: 0.3rem;
+}
+.texto p{
+	margin: 0;
 }
 .titulo div{
 	height: 100vh;
@@ -148,6 +152,13 @@ nav{
 	background-color: rgba(59, 64, 59, 0.7);
 	color: white;
 	font-weight: bold;
+}
+.sup{
+	width: auto;
+}
+.carousel {
+ 	width: 400px; 
+	height: 591px; 
 }
 
 /*FOOTER*/
