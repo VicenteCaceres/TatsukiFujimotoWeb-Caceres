@@ -4,12 +4,13 @@
 	<title>CONTACTO</title>
 	<meta charset="utf-8">
 	<meta name=viewpoint content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="CSS/estilos.css">
 </head>
 <body>
 	<div class="header">
 		<div class="logo">
-			<a href="index.html">TATSUKI FUJIMOTO</a></div>
+			<a href="index.html">TATSUKI<br>FUJIMOTO</a></div>
 		<div class="navegacion">
 			<ul>
 				<li><a href="index.html">HOME</a></li>
@@ -20,14 +21,25 @@
 		</div>
 	</div>
 	<div class="formulario">
-		<form action="" method="POST" enctype="multipart/form-data">
-			<span>Nombre:</span>
-			<input type="name" name="Nombre">
-			<p>Correo</p>
-			<input type="email" name="email">
-			<p>Escribir Sugerencias</p>
-			<textarea name="mensaje"></textarea>
-			<input type="button" name="" value="ENVIAR">
+		<form>
+			<div class="mb-3">
+			    <label for="exampleInputPassword1" class="form-label">Nombre</label>
+			    <input type="name" class="form-control" id="exampleInputPassword1">
+			</div>
+		  	<div class="mb-3">
+			    <label for="exampleInputEmail1" class="form-label">Correo</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+			    <div id="emailHelp" class="form-text">No compartiremos tu correo con nadie más</div>
+			</div>
+			<div class="mb-3">
+				<label for="exampleInputPassword1" class="form-label">Escribir Sugerencias</label>
+				<textarea name="mensaje"></textarea>
+			</div>
+			<div class="mb-3 form-check">
+			   	<input type="checkbox" class="form-check-input" id="exampleCheck1">
+			    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Enviar</button>
 		</form>
 	</div>
 	<div class="footer">
@@ -42,5 +54,6 @@
 			</div>
 		</div>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

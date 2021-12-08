@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<title>OBRAS</title>
 	<meta charset="utf-8">
 	<meta name=viewpoint content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="CSS/estilos.css">
 	<link rel="stylesheet" 
 	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="CSS/estilos.css">
 </head>
 </head>
 <body>
-	<div id="grilla">
 		<nav class="navbar navbar-expand-md navbar-light" style="background-color: #F2EA30">
 			<div class="container-fluid">
 		    <a class="navbar-brand" href="index.html">TATSUKI<br>FUJIMOTO</a>
@@ -36,16 +35,15 @@
 		    </div>
 		  </div>
 		</nav>
-		<div class="contentO">
+		<div class="d-flex flex-column">
 			<div id="backgroundConfObras" class="imagen2 negro">
-				<div class="titulo">
+				<div class="titulo d-flex align-items-center justify-content-center">
 					<div>
 						<p class="wow animate__animated animate__fadeIn">CHAINSAW MAN</p>
 					</div>
 				</div>
-				<div class="bloque">
-					<div class="sup">
-						<!--<img src="Imagenes/chainsawman01.jpg" alt="Portada Chainsaw Man">-->
+				<div class="d-flex m-3 align-items-center">
+					<div>
 						<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 						  	<div class="carousel-inner">
 						    	<div class="carousel-item active">
@@ -53,11 +51,11 @@
 						      		CSM">
 						    	</div>
 						    	<div class="carousel-item">
-						      		<img src="Imagenes/chainsawman02.jpg" class="d-block w-100" alt="Volumen2
+						      		<img src="Imagenes/chainsawman04.jpg" class="d-block w-100" alt="Volumen4
 						      		CSM">
 						    	</div>
 						   		<div class="carousel-item">
-						      		<img src="Imagenes/chainsawman03.jpg" class="d-block w-100" alt="Volumen3
+						      		<img src="Imagenes/chainsawman05.jpg" class="d-block w-100" alt="Volumen5
 						      		CSM">
 						    	</div>
 						  	</div>
@@ -77,14 +75,38 @@
 				</div>
 			</div>
 			<div id="backgroundConfObras" class="imagen3 negro">
-				<div class="titulo">
+				<div class="titulo d-flex align-items-center justify-content-center">
 					<div>
 						<p class="wow animate__animated animate__fadeIn">FIRE PUNCH</p>
 					</div>
 				</div>
-				<div class="bloque">
-					<div class="sup">
-						<img src="Imagenes/firepunch01.jpg" alt="Portada Fire Punch" width="400" height="591">
+				<div class="d-flex m-3 align-items-center">
+					<div>
+						<div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+						  	<div class="carousel-inner">
+						    	<div class="carousel-item active">
+						      		<img src="Imagenes/firepunch01.jpg" class="d-block w-100" width="400" height="591" alt="Volumen1
+						      		FP">
+						    	</div>
+						    	<div class="carousel-item">
+						      		<img src="Imagenes/firepunch04.jpg" class="d-block w-100" width="400" height="591" alt="Volumen4
+						      		FP">
+						    	</div>
+						   		<div class="carousel-item">
+						      		<img src="Imagenes/firepunch08.jpg" class="d-block w-100" width="400" height="591" alt="Volumen8
+						      		FP">
+						    	</div>
+						  	</div>
+						  	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+						    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    	<span class="visually-hidden">Previous</span>
+						  	</button>
+						 	 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+						    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    	<span class="visually-hidden">Next</span>
+						  	</button>
+						</div>
+						<!--<img src="Imagenes/firepunch01.jpg" alt="Portada Fire Punch" width="400" height="591">-->
 					</div>
 					<div class="texto negro">
 						<p>El mundo fue transformado por la ‘Bruja de Hielo’ en un mundo de nieve, hambre y locura. La gente muerta de frio busco calor. La ‘bendición’ que fue puesta sobre Agni, ¿Es esperanza o tal vez una maldición…?</p>
@@ -92,13 +114,13 @@
 				</div>
 			</div>
 			<div id="backgroundConfObras" class="imagen4 negro">
-				<div class="titulo">
+				<div class="titulo d-flex align-items-center justify-content-center">
 					<div>
 						<p class="wow animate__animated animate__fadeIn">LOOK BACK</p>
 					</div>
 				</div>
-				<div class="bloque">
-					<div class="sup">
+				<div class="d-flex m-3 align-items-center">
+					<div>
 						<img src="Imagenes/lookback.jpg" alt="Portada Look Back" width="400" height="591">
 					</div>
 					<div class="texto negro">
@@ -131,7 +153,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
 	<script src="js/WOW.js"></script>
 	<script>
 		new WOW().init();

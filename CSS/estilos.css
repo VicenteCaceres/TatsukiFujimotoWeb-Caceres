@@ -4,48 +4,24 @@
 	margin: 0;
 	font-family: 'Inconsolata', monospace;
 }
-#grilla{
-	display: grid;
-	grid-template-areas: 
-	"head"
-	"contenido"
-	"footer";
-}
 #backgroundConf{
 	height: 100vh;
-	/*background-image: url('../Imagenes/chainsaw-man.jpg');*/
 	background-size: cover;
 	background-position: center;
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
 }
 #backgroundConfObras{
 	height: 200vh;
-	/*background-image: url('../Imagenes/chainsaw-man.jpg');*/
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 30% 20%;
 	background-attachment: fixed;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
-	width: 100vw;
-}
-#backgroundConfObras div{
-	align-items: center;
-}
-#backgroundConfObras .titulo div{
-	display: inline-flex;
-	justify-content: center;
-}
-#backgroundConfObras img{
-	display: flex;
-	margin: 0 2rem;
 }
 .negro{
 	background-color: rgba(0, 0, 0, 0.7);
+}
+.negro-borde{
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 0.3rem;
 }
 .imagen1{
 	background-image: url('../Imagenes/chainsaw-man.jpg');
@@ -109,34 +85,24 @@ nav{
 }
 
 /*CONTENT*/
-
+.roboto{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.font-g{
+	font-size: 6rem;
+}
 .content{
 	grid-area: contenido;
 	display: flex;
 }
-.contentO{
-	grid-area: contenido;
-	display: flex;
-	flex-direction: column;
-}
-.bloque{
-	display: flex;
-	flex-direction: row;
-	margin: 1rem;
-}
 .texto1{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	background-color: rgba(59, 64, 59, 0.5);
+	background-color: rgb(202 114 112);
 	color: white;
 }
 .texto1 p{
 	padding: 1rem;
 }
 .texto{
-	display: flex;
 	color: white;
 	margin: 0 1rem 0 1rem;
 	padding: 0.3rem;
@@ -145,16 +111,13 @@ nav{
 .texto p{
 	margin: 0;
 }
-.titulo div{
+.titulo{
 	height: 100vh;
 	width: 100vw;
 	font-size: 7rem;
 	background-color: rgba(59, 64, 59, 0.7);
 	color: white;
 	font-weight: bold;
-}
-.sup{
-	width: auto;
 }
 .carousel {
  	width: 400px; 
@@ -210,9 +173,6 @@ nav{
 }
 .contacto a{
 	font-size: 1.5rem;
-}
-.formulario{
-	height: 60vh;
 }
 .pag div{
 	height: 30vh;
