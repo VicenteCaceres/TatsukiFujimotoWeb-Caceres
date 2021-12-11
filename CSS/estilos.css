@@ -46,7 +46,6 @@ nav{
 	font-size: 1.5rem;
 }
 .header{
-	grid-area: head;
 	background-color: #F2EA30;
 	width: 100%;
 	display: flex;
@@ -101,6 +100,7 @@ nav{
 }
 .texto1 p{
 	padding: 1rem;
+	font-size: 1.2rem;
 }
 .texto{
 	color: white;
@@ -110,6 +110,9 @@ nav{
 }
 .texto p{
 	margin: 0;
+}
+.subtexto{
+	font-size: 2rem;
 }
 .titulo{
 	height: 100vh;
@@ -128,22 +131,11 @@ nav{
 
 .footer{
 	font-family: 'Roboto Condensed', sans-serif;
-	grid-area: footer;
 	background-color: #E61997;
-}
-.redes{
-	display: inline-block;
-	margin: 2% 10% 2% 10%;
-}
-.footer{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
 }
 .footer span{
 	font-family: 'Roboto Condensed', sans-serif;
 	display: block;
-	margin-bottom: 5%;
 }
 .footer a{
 	font-family: 'Roboto Condensed', sans-serif;
@@ -155,21 +147,12 @@ nav{
 .redes a{
 	color: #00008d;
 }
-.block{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	flex-grow: 1;
-}
 .block a:hover{
 	color: black;
 }
 .contacto{
-	display: flex;
-	align-items: center;
 	background-color: #ccc;
 	border-radius: 7px;
-	margin: 2% 2% 2% 2%;
 }
 .contacto a{
 	font-size: 1.5rem;
@@ -190,10 +173,15 @@ nav{
 	.navegacion ul{
 		font-size: 0.8rem;
 	}
-	.texto1{
-		font-size: 0.8rem;
-		height: auto;
+	.font-g{
+		font-size: 2.25rem;
+	}
+	.texto1 p{
+		font-size: 0.9rem;
 		padding: 1px;
+	}
+	.subtexto{
+		font-size: 1.1rem;
 	}
 	.footer .redes{
 		font-size: 0.8rem;
