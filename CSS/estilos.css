@@ -183,6 +183,13 @@ nav{
 	.subtexto{
 		font-size: 1.1rem;
 	}
+	.tamImg img{
+		width: 250px;
+		height: 340px;
+	}
+	.footer div{
+		margin: 0 10px !important;
+	}
 	.footer .redes{
 		font-size: 0.9rem;
 	}
@@ -194,10 +201,7 @@ nav{
 	}
 	#backgroundConfObras{
 		height: auto;
-		display: inline-flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
+		width: 100vw;
 		background-position: right;
 	}
 	.texto{
@@ -207,8 +211,8 @@ nav{
 	.titulo{
 		font-size: 1.2rem;
 	}
-	#backgroundConfObras img{
+/*	#backgroundConfObras img{
 		height: 200px;
 		width: 133px;
-	}
+	}*/
 }
