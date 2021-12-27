@@ -10,17 +10,73 @@
 	<link rel="stylesheet" type="text/css" href="CSS/main.css">
 </head>
 <body>
-	<div class="header">
-		<div class="logo">
-			<a href="index.html">TATSUKI<br>FUJIMOTO</a>
+	<nav class="navbar navbar-expand-md navbar-light" style="background-color: #F2EA30">
+		<div class="container-fluid">
+		    <a class="navbar-brand" href="index.html">TATSUKI<br>FUJIMOTO</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarNav">
+		      	<ul class="navbar-nav">
+			    	<li class="nav-item">
+			      		<a class="nav-link fs-3" aria-current="page" href="index.html">HOME</a>
+		        	</li>
+			        <li class="nav-item">
+			         	<a class="nav-link fs-3" href="BIOGRAFIA.html">BIOGRAFÍA</a>
+			        </li>
+			        <li class="nav-item">
+			          	<a class="nav-link fs-3" href="OBRAS.html">OBRAS</a>
+			        </li>
+			        <li class="nav-item">
+			        	<a class="nav-link active fs-3" href="GALERIA.html" tabindex="-1" aria-disabled="true">GALERÍA</a>
+			        </li>
+		     	</ul>
+		    </div>
+	  	</div>
+	</nav>
+	<h1>
+		Galeria de Arte
+	</h1>
+	<ul class="galeria d-flex flex-wrap justify-content-around border-box">
+		<li><a href="#img1"><img src="Imagenes/chainsawman01.jpg" alt=""></a></li>
+		<li><a href="#img2"><img src="Imagenes/chainsawman02.jpg" alt=""></a></li>
+		<li><a href="#img3"><img src="Imagenes/chainsaw-bat.jpg" alt=""></a></li>
+		<li><a href="#img4"><img src="Imagenes/chainsawman04.jpg" alt=""></a></li>
+	</ul>
+	<div class="estructura" id="img1">
+		<h2 class="text-center"> Imagen 1</h2>
+		<a class="cierre d-block m-auto mt-3 mb-3 text-center" href="">X</a>
+		<div class="imagen d-flex justify-content-center align-items-center">
+			<a href="#img4">&#60;</a>
+			<a href="#img1" class="flex-shrink-2"><img src="Imagenes/chainsawman01.jpg"></a>
+			<a href="#img2">></a>
 		</div>
-		<div class="navegacion">
-			<ul>
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="BIOGRAFIA.html">BIOGRAFÍA</a></li>
-				<li><a href="OBRAS.html">OBRAS</a></li>
-				<li class="selected"><a href="GALERIA.html">GALERÍA</a></li>
-			</ul>
+	</div>
+	<div class="estructura" id="img2">
+		<h2 class="text-center"> Imagen 2</h2>
+		<a class="cierre d-block m-auto mt-3 mb-3 text-center" href="">X</a>
+		<div class="imagen d-flex justify-content-center align-items-center">
+			<a href="#img1">&#60;</a>
+			<a href="#img2" class="flex-shrink-2"><img src="Imagenes/chainsawman02.jpg"></a>
+			<a href="#img3">></a>
+		</div>
+	</div>
+	<div class="estructura" id="img3">
+		<h2 class="text-center"> Imagen 3</h2>
+		<a class="cierre d-block m-auto mt-3 mb-3 text-center" href="">X</a>
+		<div class="imagen d-flex justify-content-center align-items-center">
+			<a href="#img2">&#60;</a>
+			<a href="#img3" class="flex-shrink-2"><img src="Imagenes/chainsaw-bat.jpg"></a>
+			<a href="#img4">></a>
+		</div>
+	</div>
+	<div class="estructura" id="img4">
+		<h2 class="text-center"> Imagen 4</h2>
+		<a class="cierre d-block m-auto mt-3 mb-3 text-center" href="">X</a>
+		<div class="imagen d-flex justify-content-center align-items-center">
+			<a href="#img3">&#60;</a>
+			<a href="#img4" class="flex-shrink-2"><img src="Imagenes/chainsawman04.jpg"></a>
+			<a href="#img1">></a>
 		</div>
 	</div>
 	<div>
