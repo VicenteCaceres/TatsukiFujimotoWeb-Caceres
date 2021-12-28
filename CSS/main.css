@@ -258,7 +258,7 @@ nav {
 
 .galeria img {
   width: 250px;
-  height: 300px;
+  height: 350px;
 }
 
 .estructura {
@@ -292,10 +292,18 @@ nav {
 }
 
 .imagen img {
-  height: 100%;
-  max-width: 100%;
   border: 7px solid white;
   box-sizing: border-box;
+}
+
+.largo img {
+  max-height: 560px;
+  max-width: 100%;
+}
+
+.ancho img {
+  width: 100%;
+  max-height: 560px;
 }
 
 .cierre {
