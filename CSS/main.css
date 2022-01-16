@@ -261,6 +261,18 @@ nav {
   height: 350px;
 }
 
+.galeria .inverso img {
+  width: 545px;
+  height: 350px;
+}
+
+@media all and (max-width: 590px) {
+  .galeria .inverso img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .estructura {
   display: none;
 }
