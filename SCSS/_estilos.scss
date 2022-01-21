@@ -25,6 +25,10 @@
 .negro{
 	background-color: map-get($colorFondo, negro);
 }
+.gris{
+	background-color: map-get($colorFondo, gris);
+	border-radius: 0.6rem;
+}
 .negro-borde{
 	background-color: map-get($colorFondo, negro);
 	border-radius: 0.3rem;
@@ -110,6 +114,12 @@ nav{
 .roboto{
 	font-family: 'Roboto Condensed', sans-serif;
 }
+.colorNegro{
+	color: black;
+}
+.colorRosa{
+	background-color: map-get($colorFondo, rosa);
+}
 .font-g{
 	font-size: 6rem;
 	p{
@@ -121,6 +131,9 @@ nav{
 .content{
 	grid-area: contenido;
 	display: flex;
+}
+.fondorepetido{
+	background-image: url('../Imagenes/chainsaw-head.jpg');
 }
 .texto1 {
 	background-color: map-get($colorFondo, rojo);
@@ -276,7 +289,7 @@ nav{
 }
 .footer{
 	@extend %font-family;
-	background-color: #E61997;
+	background-color: map-get($colorFondo, rosa);
 	span{
 		@extend %font-family;
 		display: block;

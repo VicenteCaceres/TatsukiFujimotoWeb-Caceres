@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="Tatsuki Fujimoto, Galeria, Mangaka, Chainsaw Man, Fire Punch, Look Back, Manga, Paneles, Dibujo">
 	<meta name="description" content="Una galeria que recopila lo mejor del arte de Tatsuki Fujimoto de sus distintas obras">
+	<link rel="stylesheet" 
+	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="CSS/main.css">
 </head>
@@ -35,32 +37,32 @@
 	  	</div>
 	</nav>
 	<h1 class="m-2">
-		Galeria de Arte
+		Galería de Arte
 	</h1>
 	<h2 class="m-2">
 		CHAINSAW MAN
 	</h2>
 	<ul class="galeria d-flex flex-wrap justify-content-around border-box">
-		<li><a href="#img1"><img src="Imagenes/chainsawman01.jpg" alt=""></a></li>
-		<li><a href="#img2"><img src="Imagenes/portadaChainsaw.jpg" alt=""></a></li>
-		<li><a href="#img3" class="inverso"><img src="Imagenes/chainsaw-bat.jpg" alt=""></a></li>
-		<li><a href="#img4" class="inverso"><img src="Imagenes/chainsaw-shark.jpg" alt=""></a></li>
-		<li><a href="#img5"><img src="Imagenes/akiCover.png" alt=""></a></li>
-		<li><a href="#img6"><img src="Imagenes/akiCover2.jpg" alt=""></a></li>
-		<li><a href="#img7"><img src="Imagenes/darknessDevil.jpg" alt=""></a></li>
-		<li><a href="#img8"><img src="Imagenes/denji-door.jpg" alt=""></a></li>
-		<li><a href="#img9" class="inverso"><img src="Imagenes/chainsawCover.jpg" alt=""></a></li>
+		<li class="wow animate__animated animate__fadeInUp"><a href="#img1"><img src="Imagenes/chainsawman01.jpg" alt=""></a></li>
+		<li class="wow animate__animated animate__fadeInUp"><a href="#img2"><img src="Imagenes/portadaChainsaw.jpg" alt=""></a></li>
+		<li class="wow animate__animated animate__fadeInUp"><a href="#img3" class="inverso"><img src="Imagenes/chainsaw-bat.jpg" alt=""></a></li>
+		<li class="wow animate__animated animate__fadeInUp"><a href="#img4" class="inverso"><img src="Imagenes/chainsaw-shark.jpg" alt=""></a></li>
+		<li class="wow animate__animated animate__fadeInUp"><a href="#img5"><img src="Imagenes/akiCover.png" alt=""></a></li>
+		<li class="wow animate__animated animate__fadeInUp"><a href="#img6"><img src="Imagenes/akiCover2.jpg" alt=""></a></li>
+		<li class="wow animate__animated animate__fadeInUp"><a href="#img7"><img src="Imagenes/darknessDevil.jpg" alt=""></a></li>
+		<li class="wow animate__animated animate__fadeInUp"><a href="#img8"><img src="Imagenes/denji-door.jpg" alt=""></a></li>
+		<li class="wow animate__animated animate__fadeInUp"><a href="#img9" class="inverso"><img src="Imagenes/chainsawCover.jpg" alt=""></a></li>
 	</ul>
 	<h2 class="m-2">
 		FIRE PUNCH
 	</h2>
 	<ul class="galeria d-flex flex-wrap justify-content-around border-box">
-		<li><a href="#img10" class="inverso"><img src="Imagenes/firepunch.jpg" alt=""></a></li>
-		<li><a href="#img11"><img src="Imagenes/firepunch-face.jpg" alt=""></a></li>
-		<li><a href="#img12"><img src="Imagenes/agni-mecha.jpg" alt=""></a></li>
-		<li><a href="#img13"><img src="Imagenes/firepunch-kill.jpg" alt=""></a></li>
-		<li><a href="#img14"><img src="Imagenes/firepunch-mercy.jpg" alt=""></a></li>
-		<li><a href="#img15" class="inverso"><img src="Imagenes/togata-train.jpg" alt=""></a></li>
+		<li class="wow animate__animated animate__fadeInUp"><a href="#img10" class="inverso"><img src="Imagenes/firepunch.jpg" alt=""></a></li>
+		<li class="wow animate__animated animate__fadeInUp"><a href="#img11"><img src="Imagenes/firepunch-face.jpg" alt=""></a></li>
+		<li class="wow animate__animated animate__fadeInUp"><a href="#img12"><img src="Imagenes/agni-mecha.jpg" alt=""></a></li>
+		<li class="wow animate__animated animate__fadeInUp"><a href="#img13"><img src="Imagenes/firepunch-kill.jpg" alt=""></a></li>
+		<li class="wow animate__animated animate__fadeInUp"><a href="#img14"><img src="Imagenes/firepunch-mercy.jpg" alt=""></a></li>
+		<li class="wow animate__animated animate__fadeInUp"><a href="#img15" class="inverso"><img src="Imagenes/togata-train.jpg" alt=""></a></li>
 	</ul>
 	<div class="estructura" id="img1">
 		<a class="cierre d-block m-auto mt-3 mb-3 text-center" href="">X</a>
@@ -185,8 +187,9 @@
 	<footer class="footer container-fluid row m-auto pt-3 pb-3">
 		<div class="redes col-7 m-auto">
 			<span class="m-2">Redes Sociales:</span>
-			<div><a href="">Twitter</a></div>
-			<div><a href="">red social 2</a></div>
+			<div class="ms-4">
+				<a href="https://twitter.com/nagayama_koharu">Twitter</a>
+			</div>
 		</div>
 		<div class="block d-flex align-items-center justify-content-star col-2">
 			<div class="contacto">
@@ -194,6 +197,10 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/wow.min.js"></script>
+	<script>
+	new WOW().init();
+	</script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

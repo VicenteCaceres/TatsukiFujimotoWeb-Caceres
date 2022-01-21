@@ -38,6 +38,11 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.gris {
+  background-color: rgba(198, 192, 195, 0.8);
+  border-radius: 0.6rem;
+}
+
 .negro-borde {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 0.3rem;
@@ -139,6 +144,14 @@ nav {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+.colorNegro {
+  color: black;
+}
+
+.colorRosa {
+  background-color: #E61997;
+}
+
 .font-g {
   font-size: 6rem;
 }
@@ -152,6 +165,10 @@ nav {
 .content {
   grid-area: contenido;
   display: flex;
+}
+
+.fondorepetido {
+  background-image: url("../Imagenes/chainsaw-head.jpg");
 }
 
 .texto1 {
