@@ -18,9 +18,11 @@
 	background-attachment: fixed;
 	@media all and (max-width: 768px){
 		height: auto;
-		width: 100vw;
 		background-position: right;
 	}
+}
+.navbar{
+	background-color: map-get($colorFondo, amarillo);
 }
 .negro{
 	background-color: map-get($colorFondo, negro);
@@ -55,62 +57,9 @@ nav{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 1.5rem;
 }
-.header{
-	background-color: #F2EA30;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	a{
-		text-decoration: none;
-	}
-}
-.logo{
-	padding: 0 50px;	
-	margin: 2% 5% 2% 5%;
-	@media all and (max-width: 768px){
-		padding: 5px;
-	}
-	a{
-		font-family: 'Roboto Condensed', sans-serif;
-		font-size: 1.5rem;
-		color: black;
-		@media all and (max-width: 768px){
-			font-size: 1rem;
-		}
-	}
-}
-.navegacion {
-	flex-grow: 1;
-	ul{
-		list-style: none;
-		display: flex;
-		justify-content: space-evenly;
-		font-size: 1.5rem;
-		@media all and (max-width: 768px){
-			font-size: 0.8rem;
-		}
-	}
-	a{
-		color: #999999;
-	}
-}
-.navegacion {
-	ul {
-		a{
-			&:hover{
-				color: black;
-			}
-		}
-	}
-}
-.selected {
-	a{
-		color: white;
-	}
-}
 
 /*CONTENT*/
+
 .roboto{
 	font-family: 'Roboto Condensed', sans-serif;
 }
@@ -182,14 +131,20 @@ nav{
 	}
 }
 .carousel {
- 	width: 400px; 
-	height: 591px; 
+ 	width: 400px;  
+}
+.maxAlto{
+	max-height: 591px;
 }
 .tamImg{
 	img{
+		@media all and (max-width: 1032px){
+			width: 311px;
+			height: 484px;
+		}
 		@media all and (max-width: 768px){
-			width: 250px;
-			height: 340px;
+			width: 283px;
+			height: 440px;
 		}
 	}
 }
@@ -284,6 +239,7 @@ nav{
 }
 
 /*FOOTER*/
+
 %font-family{
 	font-family: 'Roboto Condensed', sans-serif;
 }
@@ -300,18 +256,19 @@ nav{
 	}
 	div{
 		@media all and (max-width: 768px){
-			margin: 0 10px !important;
+			
 		}
 	}
 	.redes{
 		@media all and (max-width: 768px){
-			font-size: 0.9rem;
+			font-size: 1rem;
 		}
 	}
 	.contacto{
+		font-size: 2rem;
 		a{
 			@media all and (max-width: 768px){
-				font-size: 1rem; 
+				font-size: 1.4rem; 
 			}
 		}
 	}
